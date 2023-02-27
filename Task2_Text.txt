@@ -1,0 +1,24 @@
+
+-- create
+CREATE TABLE GROUPMATES (
+  id INTEGER PRIMARY KEY AUTO_INCREMENT,
+  name TEXT NOT NULL,
+  age TEXT NOT NULL,
+  address TEXT NOT NULL
+);
+
+-- insert
+INSERT INTO GROUPMATES (name, age, address) VALUES ('Максим', '30', 'Москва');
+INSERT INTO GROUPMATES (name, age, address) VALUES ('Елена', '50', 'Чикаго');
+INSERT INTO GROUPMATES (name, age, address) VALUES ('Роза', '19', 'Новосибирск');
+INSERT INTO GROUPMATES (name, age, address) VALUES ('Олег', '42', 'Москва');
+INSERT INTO GROUPMATES (name, age, address) VALUES ('Олеся', '28', 'Хабаровск');
+INSERT INTO GROUPMATES (name, age, address) VALUES ('Ирина', '24', 'Владикавказ');
+INSERT INTO GROUPMATES (name, age, address) VALUES ('Владислав', '46', 'Владивосток');
+INSERT INTO GROUPMATES (name, age, address) VALUES ('Марина', '35', 'Новосибирск');
+INSERT INTO GROUPMATES (name, age, address) VALUES ('Илья', '29', 'Москва');
+INSERT INTO GROUPMATES (name, age, address) VALUES ('Роман', '48', 'Минск');
+
+-- fetch 
+SELECT name FROM GROUPMATES WHERE age >= 18 AND age < 30
+ORDER BY age ASC;
